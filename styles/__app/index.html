@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular tutorial</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/components/app.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700">
+  <body ng-controller="AppController" ng-class="tClass ? 'head-menu' : 'head-menu-active'"><a href="javascript:void(0)" ng-click="tClass = !tClass" class="mobile-menu">menu<span></span></a>
+    <div class="nav">
+      <ul class="cUL">
+        <li><a href="#">Palette</a></li>
+        <li><a href="#">UI colors</a></li>
+        <li><a href="#">Typography</a></li>
+      </ul>
+    </div>
+  </body>
+  <script src="../js/angular.min.js"></script>
+  <script src="../js/main.js"></script>
+</html>

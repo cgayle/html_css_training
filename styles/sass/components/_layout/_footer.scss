@@ -1,0 +1,47 @@
+.footer {
+  color: #000;
+  background-color: rgb(153, 153, 153);
+  width: 100%;
+  height: 288px;
+
+  @include bp(1200, min-width) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  @include bp(1920, min-width) {
+    max-width: 1700px;
+    height: 285px;
+  }
+
+  .footer-logo {
+    display: block;
+    margin: 0px auto;
+    padding: 16px;
+
+    @include bp(480, min-width) {
+      float: left;
+    }
+  }
+
+  .footer-logo-div {
+    text-align: center;
+
+    span {
+      color: #fff;
+
+      @include bp(480, min-width) {
+        margin-top: 27px;
+        float: left;
+      }
+    }
+
+  }
+}
+
+.block-three {
+  @include bp(1200, min-width) {
+    background-color: #E6E6E6;
+  }
+}

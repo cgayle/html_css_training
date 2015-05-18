@@ -1,0 +1,168 @@
+
+//Padding bottom hack / responsive image.
+//Usage: @include responsive-img
+
+@mixin responsive-img(){
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+//Usage: @include clear-list();
+@mixin clear-list(){
+  list-style: none;
+  list-style-type: none;
+}
+
+//Responsive video
+//Usage: @include responsive-video()
+
+@mixin responsive-video() {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  embed,
+  object,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//Absolute center
+//Usage: @include center()
+
+@mixin center(){
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+//Center align a horizontal list
+//Usage: @include center-list
+
+@mixin center-list(){
+  margin: 0 auto;
+  li{
+    display: inline-block;
+  }
+}
+
+
+//Prevent breaking out long URLs
+//Usage: @extend %word-break
+
+%word-break {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+%ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+//Floated element always comes first in the document order. http://wtfhtmlcss.com/#floats-clearing
+//Usage: @include clearfix
+
+@mixin clearfix(){
+  &:before,
+  &:after{
+    content: '';
+    display: table;
+  }
+  &:after{
+    clear: both
+  }
+}
+
+//Crossbrowser opacity mixin
+
+@mixin opacity($value){
+  opacity: #{"." + $value};
+  filter: alpha(opacity=$value);
+  -ms-filter: "alpha(opacity=$value)";
+  -khtml-opacity: #{"." + $value};
+  -webkit-opacity: #{"." + $value};
+  -moz-opacity: #{"." + $value};
+}
+
+//Background-size
+//Usage: @include backgroundSize();
+
+@mixin backgroundSize(){
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+//Usage: @include filter(grayscale, 100%);
+// https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html
+//
+// grayscale      ex: filter: grayscale(100%);
+// sepia          ex: filter: sepia(100%);
+// saturate       ex: filter: saturate(0%);
+// hue-rotate     ex: filter: hue-rotate(45deg);
+// invert         ex: filter: invert(100%);
+// brightness     ex: filter: brightness(15%);
+// contrast       ex: filter: contrast(200%);
+// blur           ex: filter: blur(2px);
+
+@mixin filter($filter-type,$filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+//Usage: @include anchor();
+
+@mixin anchor(){
+  text-decoration: none;
+  &:focus,
+  &:hover{
+    text-decoration: none;
+    outline: 0 none;
+    border:0 none
+  }
+}
+
+//Usage: @include transition(all, 0.2s, ease-in-out);
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+//This will kill all
+@mixin css3($name, $argument) {
+  // -webkit-#{$name}: #{$argument};
+  // -ms-#{$name}: #{$argument};
+  // -moz-#{$name}: #{$argument};
+  // -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}

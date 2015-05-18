@@ -1,0 +1,596 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  //@include bp(768, min-width) {
+  //   width: 100%;
+  //   max-width: 1200px;
+  //   margin: 0 auto;
+  // }
+  //
+  //@include bp(1200, min-width) {
+  //  width: 100%;
+  //  max-width: 1286px;
+  //  margin: 0 auto;
+  //}
+}
+
+.header-wrapper {
+  margin: 0 !important;
+  width: 100%;
+
+  @include bp(1200, min-width) {
+    padding-top: 35px;
+  }
+
+  .navigation {
+
+    a:hover {
+      border-bottom: 2px solid #00447D;
+
+    }
+
+    ul {
+      @include clearboth();
+      @include clear-list();
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    ul a {
+      color: #00447d;
+      margin: 0px 20px;
+      font-size: 19px;
+      font-weight: 600;
+      -webkit-transition: all 100ms linear;
+      -moz-transition: all 100ms linear;
+      -o-transition: all 100ms linear;
+      transition: all 100ms linear;
+
+      @include bp(300, max-width) {
+        margin: 0px 0px;
+        font-size: 12px;
+      }
+
+    }
+
+    ul li {
+      float: none;
+      display: inline-block;
+      padding-top: 15px;
+      top: 143px;
+
+      @include bp(300, max-width) {
+        height: 10px;
+        margin: 0px;
+        padding-top: 15px;
+      }
+
+      @include bp(768, max-width) {
+        margin: 17px 0px 0px -20px;
+        padding-top: 15px;
+      }
+
+      @include bp(1200, max-width) {
+        margin: 15px 4px 0px 0px;
+        padding-top: 0px;
+      }
+    }
+
+    padding-bottom: 13px;
+
+    @include bp(1200, min-width) {
+      top: 85px;
+      padding-right: 0px;
+      position: absolute;
+      margin-left: 365px;
+      margin-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    @include bp(1920, min-width) {
+      top: 97px;
+      width: 76%;
+      position: absolute;
+      margin-left: 0px;
+      margin-top: 0px;
+      padding-bottom: 13px;
+    }
+
+  }
+}
+
+.header {
+  h1 {
+    height: 57px;
+    margin: 0;
+  }
+
+  .logo {
+    padding: 25px 10px 0px !important;
+    border-bottom: 0px none;
+    float: left;
+    width: 25%;
+  }
+
+  .logo a {
+    background: url('#{$imgPath}/001_assets_DPLogo.png') no-repeat scroll 0% 0% / 237px 137px;
+    text-indent: -999em;
+    float: left;
+    margin-top: 12px;
+    display: block;
+    height: 137px;
+    width: 237px;
+
+    @include bp(1200, max-width) {
+      margin-top: 56px;
+    }
+  }
+
+  .profile {
+    float: right;
+    position: relative;
+    background: -moz-linear-gradient(left, rgba(0, 68, 125, 0.85) 0%, rgba(0, 68, 125, 0.85) 50%, rgba(0, 68, 125, 0.85) 51%, rgba(0, 68, 125, 0.85) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 68, 125, 0.85)), color-stop(50%, rgba(0, 68, 125, 0.85)), color-stop(51%, rgba(0, 68, 125, 0.85)), color-stop(100%, rgba(0, 68, 125, 0.85))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0, 68, 125, 0.85) 0%, rgba(0, 68, 125, 0.85) 50%, rgba(0, 68, 125, 0.85) 51%, rgba(0, 68, 125, 0.85) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0, 68, 125, 0.85) 0%, rgba(0, 68, 125, 0.85) 50%, rgba(0, 68, 125, 0.85) 51%, rgba(0, 68, 125, 0.85) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0, 68, 125, 0.85) 0%, rgba(0, 68, 125, 0.85) 50%, rgba(0, 68, 125, 0.85) 51%, rgba(0, 68, 125, 0.85) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(0, 68, 125, 0.85) 0%, rgba(0, 68, 125, 0.85) 50%, rgba(0, 68, 125, 0.85) 51%, rgba(0, 68, 125, 0.85) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d900447d', endColorstr='#d900447d', GradientType=1); /* IE6-9 */
+
+    @include bp(768, min-width) {
+
+    }
+
+    @include bp(1200, min-width) {
+      width: 7%;
+    }
+
+    @include bp(1920, min-width) {
+      width: 5%;
+    }
+
+    .profilepic-size {
+      width: 100%;
+
+      @include bp(1200, min-width) {
+        width: 157px;
+        margin-left: -74px;
+        height: 175px;
+      }
+
+      @include bp(1920, min-width) {
+        margin-left: -72px;
+      }
+    }
+
+    .logged {
+      padding-left: 10px;
+    }
+
+    .logged-in {
+      position: relative;
+      font-size: 8px;
+      color: #3CA3EE;
+      padding-top: 10px;
+    }
+
+    .logged-in-user {
+      font-size: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .caret {
+    position: relative;
+  }
+
+  .caret:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 7px solid #ffffff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  }
+
+  .caret:after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+
+  .header-background {
+    background: url('#{$imgPath}/001_assets_galaxy_background.png') no-repeat scroll 0% 0%;
+    background-size: cover;
+    position: relative;
+
+    @include bp(1200, min-width) {
+      width: 100%;
+      height: 600px;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: -476px;
+    }
+
+    @include bp(1920, min-width) {
+      max-width: 1700px;
+      margin-top: -213px;
+      height: 683px;
+    }
+
+  }
+
+  .profile-logo-header {
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 249, 249, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 249, 249, 0.51)), color-stop(100%, rgba(255, 255, 255, 0.5))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 249, 249, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 249, 249, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 249, 249, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 249, 249, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#80ffffff', GradientType=1); /* IE6-9 */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    //height: 200px;
+
+    @include bp(768, min-width) {
+      // height: 158px;
+    }
+    @include bp(1200, min-width) {
+      height: 175px;
+      max-width: 1200px;
+    }
+
+    @include bp(1920, min-width) {
+      max-width: 1700px;
+    }
+
+  }
+
+  .white {
+    display: none;
+
+    @include bp(1200, min-width) {
+      height: 140px;
+      width: 100%;
+      background: #FFF none repeat scroll 0% 0%;
+      display: block;
+    }
+
+    @include bp(1920, min-width) {
+      position: relative;
+      top: -36px;
+      height: 173px;
+    }
+
+  }
+
+  .black {
+
+    padding-top: 337px;
+
+    width: 100%;
+    background: #333 none repeat scroll 0% 0%;
+
+    @include bp(320, min-width) {
+      padding-top: 0px;
+    }
+
+    @include bp(750, min-width) {
+      padding-top: 0px;
+    }
+
+    @include bp(1200, min-width) {
+      background: #333 none repeat scroll 0% 0%;
+      padding-top: 301px;
+    }
+
+    @include bp(1920, min-width) {
+      padding-top: 0px;
+    }
+
+    .header-block {
+
+      @include bp(1200, min-width) {
+        margin: 0px auto;
+      }
+    }
+
+    .tabs {
+
+      @include bp(320, min-width) {
+        background-color: #fff;
+      }
+
+      @include bp(768, max-width) {
+        background-color: #fff;
+        padding-bottom: 9px;
+      }
+
+    }
+  }
+
+}
+
+.profile-banner {
+
+  width: 100%;
+
+  .banner {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 90px;
+    padding-top: 1px;
+
+    @include bp(1200, min-width) {
+      position: absolute;
+      height: 425px;
+      width: 433px;
+      padding-top: 9px;
+    }
+
+    @include bp(1920, min-width) {
+      height: 508px;
+    }
+
+    .section-one {
+      font-size: 27px;
+      margin: 0px auto;
+      text-align: center;
+      padding-top: 0px;
+      height: 100px;
+      margin-top: -31px;
+
+      @include bp(629, max-width) {
+        padding-top: 37px;
+      }
+
+      @include bp(1200, min-width) {
+        padding-top: 21%;
+        padding-bottom: 2%;
+        height: 432px;
+      }
+
+    }
+
+    .sec-one {
+      font-weight: 300;
+      line-height: 50px;
+
+      @include bp(629, max-width) {
+        line-height: 0px;
+      }
+
+      @include bp(1200, min-width) {
+        font-size: 52px;
+        font-weight: 300;
+      }
+    }
+
+    .universe {
+      font-weight: 600;
+
+      @include bp(1200, min-width) {
+        font-weight: 700;
+        font-size: 52px;
+      }
+
+    }
+
+    .sec-two {
+
+      font-weight: 300;
+      line-height: 30px;
+
+      @include bp(629, max-width) {
+        line-height: 0px;
+      }
+
+      @include bp(1200, min-width) {
+        font-size: 66px;
+        font-weight: 600;
+        margin-top: -26px;
+      }
+    }
+
+    .sec-three {
+
+      font-weight: 300;
+      line-height: 50px;
+
+      @include bp(629, max-width) {
+        line-height: 0px;
+      }
+
+      @include bp(1200, min-width) {
+        font-size: 74px;
+        margin-top: -42px;
+        font-weight: 300;
+      }
+    }
+
+    .sec-four {
+
+      font-weight: 300;
+      line-height: 140px;
+
+      @include bp(629, max-width) {
+        line-height: 0px;
+      }
+
+      @include bp(1200, min-width) {
+        font-size: 45px;
+        font-weight: 300;
+      }
+    }
+
+  }
+}
+
+.section-two {
+
+  @include bp(1200, min-width) {
+    position: absolute;
+    top: 175px;
+    padding-left: 433px;
+  }
+
+  @include bp(1920, min-width) {
+    padding-left: 429px;
+  }
+
+  @include clearboth();
+  position: relative;
+
+  .thumbnails {
+    width: 100%;
+    padding-top: 0%;
+
+    @include bp(768, min-width) {
+      width: 100%;
+      padding-top: 0%;
+    }
+
+    @include bp(1200, min-width) {
+      width: 75%;
+    }
+
+    @include bp(1920, min-width) {
+      width: 100%;
+    }
+
+  }
+
+  .description {
+    color: #00447d;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.71);
+    padding: 20px;
+    max-width: 767px;
+    margin-left: 0;
+    width: 100%;
+
+    @include bp(768, min-width) {
+      margin-left: 40px;
+      max-width: 500px;
+    }
+
+    @include bp(1200, min-width) {
+      margin-left: 432px;
+      max-width: 500px;
+    }
+
+    @include bp(1366, min-width) {
+      margin-left: 432px;
+    }
+
+    @include bp(1920, min-width) {
+      margin-left: 431px;
+    }
+
+    .play_button {
+      float: left;
+    }
+
+    .desc {
+      font-size: 13px;
+      margin-left: 66px;
+    }
+  }
+
+  .section-two_block {
+    height: 508px;
+    overflow: hidden;
+    padding-top: 0px;
+    background: url('#{$imgPath}/001_assets_M50.png') no-repeat left;
+    background-size: cover;
+
+    @include bp(1200, min-width) {
+      background-position: 100% 100%;
+      background-size: 100% 107%;
+      width: 609px;
+      height: 425px;
+      display: block;
+    }
+
+    @include bp(1366, min-width) {
+      width: 610px;
+    }
+
+    @include bp(1920, min-width) {
+      background-position: 100% 44%;
+      background-size: 100%;
+      display: block;
+      height: 508px;
+      width: 1114px;
+    }
+
+  }
+}
+
+.section-three {
+
+  display: none;
+
+  a {
+    color: #fff;
+  }
+
+  @include bp(1200, min-width) {
+    color: #FFF;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    text-align: justify;
+    padding-left: 1%;
+    top: 175px;
+    position: absolute;
+  }
+
+  @include bp(1920, min-width) {
+    top: 175px;
+  }
+
+  .login {
+    color: #3FA9F5;
+  }
+
+  .accounts {
+    padding-top: 17%;
+  }
+
+  .account-login {
+    @include bp(1200, min-width) {
+      background-color: rgba(9, 74, 134, 0.93);
+      float: right;
+      height: 425px;
+      width: 158px;
+      padding-left: 1%;
+      padding-top: 2%;
+    }
+
+    @include bp(1920, min-width) {
+      height: 508px;
+    }
+
+  }
+
+}
+
+
+

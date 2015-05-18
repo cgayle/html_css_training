@@ -1,0 +1,152 @@
+
+// Defaults
+
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: $font-raleway;
+}
+
+body{
+  // background: $background;
+  background: #fff;
+  color: #fff;
+  //margin: 20px;
+  font-size: 16px;
+}
+
+a{
+  color: #000;
+  @include anchor();
+  &:hover{
+    color: #fff;
+  }
+}
+
+//Transition for all;
+// .nav>ul,
+.nav a,
+.mobile-menu{
+  @include css3(transition, 275ms);
+}
+
+.cUL{
+  @include clear-list();
+  margin: 0;
+  padding: 0;
+}
+
+// Menu
+//.menu{
+//  background: $purple4;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 200px;
+//  height: 100%;
+//  max-height: 500px;
+//}
+.mobile-menu{
+  text-indent: -999em;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  @include css3(border-radius, 50%);
+  border: 1px solid transparent;
+  padding: 7px;
+  span{
+    position: relative;
+    width: 20px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    top: -10px;
+    &::before,
+    &::after{
+      position: absolute;
+      content:'';
+      width: 20px;
+      height: 2px;
+      display: block;
+      background: #fff;
+      @include css3(transition, 275ms);
+    }
+    &::before{
+      top: -6px;
+    }
+    &::after{
+      top: 6px;
+    }
+  }
+  &:focus,
+  &:hover{
+    border: 1px solid $purple1;
+  }
+  .head-menu-active &{
+    span{
+      &::before{
+        transform: rotate(-45deg);
+        width: 12px;
+        top: -5px;
+        left: -1px;
+      }
+      &::after{
+        transform: rotate(45deg);
+        width: 12px;
+        top: 5px;
+        left: -1px;
+      }
+    }
+  }
+}
+
+//Nav
+.nav{
+  margin-top: 88px;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(12,9,16,1) 0%,rgba(12,9,16,1) 35%,rgba(12,9,16,0) 99%);
+    left: 0;
+    z-index: 9;
+  }
+  a{
+    font-size: 13px;
+    padding: 12px;
+    display: inline-block;
+    opacity: 0;
+  }
+  >ul{
+    margin-left: 0;
+    li{
+      &:nth-child(1){
+        a{
+          transition-delay: 200ms;
+        }
+      }
+      &:nth-child(2){
+        a{
+          transition-delay: 250ms;
+        }
+      }
+      &:nth-child(3){
+        a{
+          transition-delay: 275ms;
+        }
+      }
+    }
+    a{
+      @include css3(transform, (translate(-320px)));
+      @include css3(border-radius, 20px);
+    }
+    .head-menu-active &{
+      a{
+        @include css3(transform, (translate(0)));
+        opacity: 1;
+      }
+    }
+  }
+}
