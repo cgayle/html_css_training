@@ -663,10 +663,11 @@ body {
           .page1 .info_thumb .info .see_more {
             bottom: 0px; } }
   .page1 .advertisements {
-    height: 157px;
     background-color: #F5F5F5;
+    height: 157px;
+    padding-top: 20px;
     width: 100%; }
-    @media (max-width: 26.25em) {
+    @media (min-width: 20em) {
       .page1 .advertisements {
         padding-top: 20px; } }
     @media (min-width: 75em) {
@@ -675,10 +676,12 @@ body {
         background-color: transparent;
         overflow: hidden;
         width: 36%;
-        max-width: 1200px; } }
+        max-width: 1200px;
+        padding-top: 0px; } }
     @media (min-width: 75em) {
       .page1 .advertisements {
-        width: 432px; } }
+        width: 432px;
+        padding-top: 0px; } }
   .page1 .advertisement {
     text-align: center; }
     .page1 .advertisement .add_1 {

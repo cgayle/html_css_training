@@ -144,11 +144,12 @@
   }
 
   .advertisements {
-    height: 157px;
     background-color: #F5F5F5;
+    height: 157px;
+    padding-top: 20px;
     width: 100%;
 
-    @include bp(420, max-width) {
+    @include bp(320, min-width) {
       padding-top: 20px;
     }
 
@@ -158,10 +159,12 @@
       overflow: hidden;
       width: 36%;
       max-width: 1200px;
+      padding-top: 0px;
     }
 
     @include bp(1200, min-width) {
       width: 432px;
+      padding-top: 0px;
     }
 
   }
