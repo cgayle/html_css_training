@@ -665,7 +665,7 @@ body {
   .page1 .advertisements {
     background-color: #F5F5F5;
     height: 157px;
-    padding-top: 20px;
+    padding-top: 0px;
     width: 100%; }
     @media (min-width: 20em) {
       .page1 .advertisements {
