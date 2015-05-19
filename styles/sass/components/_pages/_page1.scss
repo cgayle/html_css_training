@@ -95,195 +95,202 @@
 
     &:last-child {
       padding-right: 0;
-    }
 
-    .info {
-      overflow: hidden;
-      padding-top: 23px;
-
-      @include bp(768, min-width) {
+      @include bp(420, max-width) {
+        padding-right: 0;
       }
-
-      @include bp(1200, min-width) {
-      }
-
-      .title {
-        color: #FF931E;
-        font-size: 19px;
-      }
-      .subtitle {
-        color: #5F5F5F;
-        font-size: 13px;
-        font-weight: bold;
-      }
-      .description {
-        color: #5F5F5F;
-        font-size: 12px;
-        text-align: justify;
-
-        @include bp(768, min-width) {
-          font-size: 12px;
-        }
-
-      }
-      .see_more {
-        float: right;
-        padding-bottom: 10px;
-
-        @include bp(768, min-width) {
-          position: absolute;
-          right: 0;
-          bottom: 2%;
-        }
-
-        @include bp(1200, min-width) {
-          bottom: 0px;
-        }
-
-      }
-    }
-  }
-
-  .advertisements {
-    background-color: #F5F5F5;
-    height: 157px;
-    width: 100%;
-
-    @include bp(1200, min-width) {
-      height: auto;
-      background-color: transparent;
-      overflow: hidden;
-      width: 36%;
-      max-width: 1200px;
-    }
-
-    @include bp(1920, min-width) {
-      width: 432px;
     }
 
   }
 
-  .advertisement {
-    text-align: center;
-
-    .add_1 {
-      height: auto;
-      max-width: 432px;
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-
-      @include bp(768, min-width) {
-        float: left;
-      }
-    }
-
-    .add_2 {
-      display: block;
-      height: auto;
-      padding-top: 5%;
-      width: 100%;
-      max-width: 432px;
-      margin: 0 auto;
-    }
-
-    .add_3 {
-      display: block;
-      padding-top: 5%;
-      width: 100%;
-
-      @include bp(768, min-width) {
-        display: block;
-        padding-top: 0%;
-        float: left;
-        width: 45%;
-      }
-
-      @include bp(1200, min-width) {
-      }
-
-      @include bp(1920, min-width) {
-        height: auto;
-        width: auto;
-      }
-
-    }
-  }
-
-  .first_add {
-    border-style: solid;
-    border-width: 2px;
-    border-top-color: #DADADA;
-    border-bottom-color: #DADADA;
+  .info {
+    overflow: hidden;
+    padding-top: 23px;
 
     @include bp(768, min-width) {
-      border-style: none;
-      border-width: 0;
-      border-top-color: none;
-      border-bottom-color: none;
     }
 
     @include bp(1200, min-width) {
-      border-style: none;
-      border-width: 0px;
     }
 
+    .title {
+      color: #FF931E;
+      font-size: 19px;
+    }
+    .subtitle {
+      color: #5F5F5F;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .description {
+      color: #5F5F5F;
+      font-size: 12px;
+      text-align: justify;
+
+      @include bp(768, min-width) {
+        font-size: 12px;
+      }
+
+    }
+    .see_more {
+      float: right;
+      padding-bottom: 10px;
+
+      @include bp(768, min-width) {
+        position: absolute;
+        right: 0;
+        bottom: 2%;
+      }
+
+      @include bp(1200, min-width) {
+        bottom: 0px;
+      }
+
+    }
+  }
+}
+
+.advertisements {
+  background-color: #F5F5F5;
+  height: 157px;
+  width: 100%;
+
+  @include bp(1200, min-width) {
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+    width: 36%;
+    max-width: 1200px;
   }
 
-  .second_add {
-    background: url('#{$imgPath}/001_assets_ad02_portrait.png') no-repeat left;
+  @include bp(1920, min-width) {
+    width: 432px;
+  }
+
+}
+
+.advertisement {
+  text-align: center;
+
+  .add_1 {
+    height: auto;
+    max-width: 432px;
     display: block;
-    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include bp(768, min-width) {
+      float: left;
+    }
+  }
+
+  .add_2 {
+    display: block;
+    height: auto;
     padding-top: 5%;
     width: 100%;
     max-width: 432px;
     margin: 0 auto;
-
-    @include bp(768, min-width) {
-      background: url('#{$imgPath}/001_assets_ad02_landscape.png') no-repeat scroll left center;
-      float: left;
-      max-width: 499px;
-      width: 43%;
-      height: 156px;
-      padding-top: 0px;
-      background-color: #F5F5F5;
-    }
-
-    @include bp(1200, min-width) {
-      clear: both;
-      background: url('#{$imgPath}/001_assets_ad02_portrait.png') no-repeat scroll left center;
-      width: 100%;
-      height: 461px;
-      background-size: 100% 100%;
-    }
-
-    @include bp(1200, min-width) {
-      width: 432px;
-    }
   }
 
-  .third_add {
+  .add_3 {
+    display: block;
+    padding-top: 5%;
     width: 100%;
-    padding-top: 527px;
 
     @include bp(768, min-width) {
-      background-color: #4372FF;
-      padding-top: 0px;
-      overflow: hidden;
+      display: block;
+      padding-top: 0%;
+      float: left;
+      width: 45%;
     }
 
     @include bp(1200, min-width) {
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
     }
 
     @include bp(1920, min-width) {
-      max-width: 1700px;
+      height: auto;
+      width: auto;
     }
 
   }
 }
+
+.first_add {
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #DADADA;
+  border-bottom-color: #DADADA;
+
+  @include bp(768, min-width) {
+    border-style: none;
+    border-width: 0;
+    border-top-color: none;
+    border-bottom-color: none;
+  }
+
+  @include bp(1200, min-width) {
+    border-style: none;
+    border-width: 0px;
+  }
+
+}
+
+.second_add {
+  background: url('#{$imgPath}/001_assets_ad02_portrait.png') no-repeat left;
+  display: block;
+  height: 500px;
+  padding-top: 5%;
+  width: 100%;
+  max-width: 432px;
+  margin: 0 auto;
+
+  @include bp(768, min-width) {
+    background: url('#{$imgPath}/001_assets_ad02_landscape.png') no-repeat scroll left center;
+    float: left;
+    max-width: 499px;
+    width: 43%;
+    height: 156px;
+    padding-top: 0px;
+    background-color: #F5F5F5;
+  }
+
+  @include bp(1200, min-width) {
+    clear: both;
+    background: url('#{$imgPath}/001_assets_ad02_portrait.png') no-repeat scroll left center;
+    width: 100%;
+    height: 461px;
+    background-size: 100% 100%;
+  }
+
+  @include bp(1200, min-width) {
+    width: 432px;
+  }
+}
+
+.third_add {
+  width: 100%;
+  padding-top: 527px;
+
+  @include bp(768, min-width) {
+    background-color: #4372FF;
+    padding-top: 0px;
+    overflow: hidden;
+  }
+
+  @include bp(1200, min-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include bp(1920, min-width) {
+    max-width: 1700px;
+  }
+
+}
+
+  }
 
 .third_add_text_1 {
   color: #fff;
