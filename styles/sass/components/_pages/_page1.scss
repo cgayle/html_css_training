@@ -125,6 +125,10 @@
         font-size: 12px;
         text-align: justify;
 
+        @include bp(620, min-width) {
+          width: 600px;
+        }
+
         @include bp(768, min-width) {
           font-size: 12px;
         }

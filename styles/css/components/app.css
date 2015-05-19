@@ -653,6 +653,9 @@ body {
         color: #5F5F5F;
         font-size: 12px;
         text-align: justify; }
+        @media (min-width: 38.75em) {
+          .page1 .info_thumb .info .description {
+            width: 600px; } }
         @media (min-width: 48em) {
           .page1 .info_thumb .info .description {
             font-size: 12px; } }
