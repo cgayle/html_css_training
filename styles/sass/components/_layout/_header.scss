@@ -125,6 +125,14 @@ body {
     height: 137px;
     width: 237px;
 
+    @include bp(420, max-width) {
+      background: url('#{$imgPath}/001_assets_DPLogo.png') no-repeat scroll;
+      background-size: 90% 100%;
+      margin-top: 43px !important;
+      height: 79px;
+      width: 155px;
+    }
+
     @include bp(1200, max-width) {
       margin-top: 56px;
     }
@@ -155,6 +163,10 @@ body {
 
     .profilepic-size {
       width: 100%;
+
+      @include bp(420, max-width) {
+        height: 100px;
+      }
 
       @include bp(1200, min-width) {
         width: 157px;

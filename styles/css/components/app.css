@@ -184,6 +184,13 @@ body {
   display: block;
   height: 137px;
   width: 237px; }
+  @media (max-width: 26.25em) {
+    .header .logo a {
+      background: url("../../images/001_assets_DPLogo.png") no-repeat scroll;
+      background-size: 90% 100%;
+      margin-top: 43px !important;
+      height: 79px;
+      width: 155px; } }
   @media (max-width: 75em) {
     .header .logo a {
       margin-top: 56px; } }
@@ -212,6 +219,9 @@ body {
       width: 5%; } }
   .header .profile .profilepic-size {
     width: 100%; }
+    @media (max-width: 26.25em) {
+      .header .profile .profilepic-size {
+        height: 100px; } }
     @media (min-width: 75em) {
       .header .profile .profilepic-size {
         width: 157px;
