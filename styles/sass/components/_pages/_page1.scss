@@ -148,6 +148,10 @@
     background-color: #F5F5F5;
     width: 100%;
 
+    @include bp(420, max-width) {
+      padding-top: 20px;
+    }
+
     @include bp(1200, min-width) {
       height: auto;
       background-color: transparent;

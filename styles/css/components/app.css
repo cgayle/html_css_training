@@ -666,6 +666,9 @@ body {
     height: 157px;
     background-color: #F5F5F5;
     width: 100%; }
+    @media (max-width: 26.25em) {
+      .page1 .advertisements {
+        padding-top: 20px; } }
     @media (min-width: 75em) {
       .page1 .advertisements {
         height: auto;

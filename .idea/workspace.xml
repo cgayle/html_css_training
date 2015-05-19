@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_header.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="19" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.36898395">
+            <state line="127" column="30" selection-start="2306" selection-end="2320" vertical-scroll-proportion="-8.04">
               <folding />
             </state>
           </provider>
@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_page1.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_page1.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/sass/components/_pages/_page1.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="292" column="31" selection-start="5095" selection-end="5095" vertical-scroll-proportion="0.0">
+            <state line="150" column="24" selection-start="2482" selection-end="2482" vertical-scroll-proportion="0.40243903">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="_footer.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+            <state line="33" column="21" selection-start="517" selection-end="517" vertical-scroll-proportion="-13.4">
               <folding />
             </state>
           </provider>
@@ -130,11 +130,11 @@
         <option value="$PROJECT_DIR$/styles/sass/components/_temp/_global.scss" />
         <option value="$PROJECT_DIR$/pages/page1.html" />
         <option value="$PROJECT_DIR$/template/header.html" />
-        <option value="$PROJECT_DIR$/styles/sass/components/_pages/_page1.scss" />
         <option value="$PROJECT_DIR$/template/footer.html" />
         <option value="$PROJECT_DIR$/styles/sass/components/_layout/_footer.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/sass/components/_layout/_header.scss" />
+        <option value="$PROJECT_DIR$/styles/sass/components/_pages/_page1.scss" />
       </list>
     </option>
   </component>
@@ -612,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="42" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0">
@@ -633,16 +626,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/components/_pages/_page1.scss">
+    <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="292" column="31" selection-start="5095" selection-end="5095" vertical-scroll-proportion="0.0">
+        <state line="127" column="30" selection-start="2306" selection-end="2320" vertical-scroll-proportion="-8.04">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_header.scss">
+    <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="19" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.36898395">
+        <state line="33" column="21" selection-start="517" selection-end="517" vertical-scroll-proportion="-13.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/components/_pages/_page1.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="24" selection-start="2482" selection-end="2482" vertical-scroll-proportion="0.40243903">
           <folding />
         </state>
       </provider>
