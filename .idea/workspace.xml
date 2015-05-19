@@ -49,7 +49,7 @@
       <file leaf-file-name="_header.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="21" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.5115864">
+            <state line="168" column="20" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.5115864">
               <folding />
             </state>
           </provider>
@@ -467,7 +467,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1319" height="784" extended-state="7" />
+    <frame x="1358" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -642,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/components/_layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="21" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.5115864">
+        <state line="168" column="20" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.5115864">
           <folding />
         </state>
       </provider>
