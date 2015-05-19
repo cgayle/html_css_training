@@ -762,6 +762,9 @@ body {
   .page1 .third_add {
     width: 100%;
     padding-top: 527px; }
+    @media (max-width: 26.25em) {
+      .page1 .third_add {
+        padding-top: 430px; } }
     @media (min-width: 48em) {
       .page1 .third_add {
         background-color: #4372FF;

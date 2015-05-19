@@ -275,6 +275,10 @@
     width: 100%;
     padding-top: 527px;
 
+    @include bp(420, max-width) {
+      padding-top: 430px;
+    }
+
     @include bp(768, min-width) {
       background-color: #4372FF;
       padding-top: 0px;
