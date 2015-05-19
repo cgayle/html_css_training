@@ -736,6 +736,9 @@ body {
     width: 100%;
     max-width: 432px;
     margin: 0 auto; }
+    @media (max-width: 26.25em) {
+      .page1 .second_add {
+        background-size: 100%; } }
     @media (min-width: 48em) {
       .page1 .second_add {
         background: url("../../images/001_assets_ad02_landscape.png") no-repeat scroll left center;
@@ -744,7 +747,8 @@ body {
         width: 43%;
         height: 156px;
         padding-top: 0px;
-        background-color: #F5F5F5; } }
+        background-color: #F5F5F5;
+        background-size: inherit; } }
     @media (min-width: 75em) {
       .page1 .second_add {
         clear: both;

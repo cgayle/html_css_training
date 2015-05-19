@@ -243,6 +243,10 @@
     max-width: 432px;
     margin: 0 auto;
 
+    @include bp(420, max-width) {
+      background-size: 100%;
+    }
+
     @include bp(768, min-width) {
       background: url('#{$imgPath}/001_assets_ad02_landscape.png') no-repeat scroll left center;
       float: left;
@@ -251,6 +255,7 @@
       height: 156px;
       padding-top: 0px;
       background-color: #F5F5F5;
+      background-size: inherit;
     }
 
     @include bp(1200, min-width) {
