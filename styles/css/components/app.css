@@ -221,7 +221,8 @@ body {
     width: 100%; }
     @media (max-width: 26.25em) {
       .header .profile .profilepic-size {
-        height: 100px; } }
+        height: 100px;
+        width: 100px; } }
     @media (min-width: 75em) {
       .header .profile .profilepic-size {
         width: 157px;
