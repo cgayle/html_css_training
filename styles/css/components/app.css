@@ -653,7 +653,8 @@ body {
           .page1 .info_thumb .info .description {
             font-size: 12px; } }
       .page1 .info_thumb .info .see_more {
-        float: right; }
+        float: right;
+        padding-bottom: 10px; }
         @media (min-width: 48em) {
           .page1 .info_thumb .info .see_more {
             position: absolute;
@@ -665,23 +666,17 @@ body {
   .page1 .advertisements {
     background-color: #F5F5F5;
     height: 157px;
-    padding-top: 0px;
     width: 100%; }
-    @media (min-width: 20em) {
-      .page1 .advertisements {
-        padding-top: 20px; } }
     @media (min-width: 75em) {
       .page1 .advertisements {
         height: auto;
         background-color: transparent;
         overflow: hidden;
         width: 36%;
-        max-width: 1200px;
-        padding-top: 0px; } }
-    @media (min-width: 75em) {
+        max-width: 1200px; } }
+    @media (min-width: 120em) {
       .page1 .advertisements {
-        width: 432px;
-        padding-top: 0px; } }
+        width: 432px; } }
   .page1 .advertisement {
     text-align: center; }
     .page1 .advertisement .add_1 {

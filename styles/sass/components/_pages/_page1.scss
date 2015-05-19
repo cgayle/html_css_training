@@ -128,6 +128,7 @@
       }
       .see_more {
         float: right;
+        padding-bottom: 10px;
 
         @include bp(768, min-width) {
           position: absolute;
@@ -146,12 +147,7 @@
   .advertisements {
     background-color: #F5F5F5;
     height: 157px;
-    padding-top: 0px;
     width: 100%;
-
-    @include bp(320, min-width) {
-      padding-top: 20px;
-    }
 
     @include bp(1200, min-width) {
       height: auto;
@@ -159,12 +155,10 @@
       overflow: hidden;
       width: 36%;
       max-width: 1200px;
-      padding-top: 0px;
     }
 
-    @include bp(1200, min-width) {
+    @include bp(1920, min-width) {
       width: 432px;
-      padding-top: 0px;
     }
 
   }
