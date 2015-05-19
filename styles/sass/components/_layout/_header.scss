@@ -166,7 +166,7 @@ body {
 
       @include bp(420, max-width) {
         height: 100px;
-        width: 80px;
+        width: 90px;
       }
 
       @include bp(1200, min-width) {
